@@ -1,5 +1,3 @@
-HOW TO RUN THE PROJECT ?
-
 1) LOGIN AND REGISTER 
 Try to login with user “group4”
 Then register user “group4”
