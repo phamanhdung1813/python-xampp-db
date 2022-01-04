@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Page</title>
+</head>
+
+<body>
+
+    <form id="claim_form" action="claim.py" method="POST">
+        <fieldset>
+            <h1>Choose your Claim:</h1>
+            <p>
+                <select class="ui dropdown" name="claim_name">
+                    <option value="iphone">IPHONE</option>
+                    <option value="CAMERA">CAMERA</option>
+                    <option value="monitor">MONITOR</option>
+                    <option value="keyboard">KEYBOARD</option>
+                </select>
+            </p>
+
+            <p>
+                <input placeholder="Enter serial number" type="text" name="serial_no" />
+            </p>
+
+            <p>
+                <input placeholder="Enter purchase date" type="text" name="date" />
+            </p>
+
+            <div class="field">
+                <textarea id='comment' rows="10" cols="50" placeholder="Enter comment ..." name="comment"></textarea>
+            </div>
+            <br />
+            <button class="ui primary button" type="submit">Submit</button>
+            <button class="ui button" type="reset" onclick="javascript:clearText();">Reset form</button>
+        </fieldset>
+    </form>
+
+    <script>
+        function clearText() {
+            document.getElementById("#comment").value = "";
+        }
+    </script>
+
+</body>
+
+</html>

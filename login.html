@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <form class="ui form" action="login.py" method="POST">
+        <div class="field">
+            <label>Username</label>
+            <input placeholder="Enter Username" type="text" name="username" />
+        </div>
+        <div class="field">
+            <label>Password</label>
+            <input placeholder="Enter Password" type="text" name="password" />
+        </div>
+
+        <button class="ui primary button" type="submit">Submit</button>
+        <button class="ui button" type="reset">Reset Form</button>
+        <a href="register.html"><button class="ui button" type="button">Register</button></a>
+    </form>
+</body>
+
+</html>

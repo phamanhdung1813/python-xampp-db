@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+
+<body>
+    <form class="ui form" action="register.py" method="POST">
+        <fieldset>
+            <div class="field">
+                <label>Username</label>
+                <input placeholder="Enter Username" type="text" name="username" />
+            </div>
+
+            <div class="field">
+                <label>Password</label>
+                <input placeholder="Enter Password" type="text" name="password" />
+            </div>
+
+            <div class="field">
+                <label>Cellphone</label>
+                <input placeholder="Enter Cellphone" type="text" name="cellphone" />
+            </div>
+
+            <div class="field">
+                <label>Email</label>
+                <input placeholder="Enter email" type="text" name="gmail" />
+            </div>
+
+            <div class="field">
+                <div class="ui checkbox">
+                    <input type="checkbox">
+                    <label>I agree to the Terms and Conditions</label>
+                </div>
+            </div>
+
+            <button class="ui primary button" type="submit">Register</button>
+            <button class="ui button" type="reset">Reset Form</button>
+            <a href="login.html"><button class="ui button" type="button">Go back to login page</button></a>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
